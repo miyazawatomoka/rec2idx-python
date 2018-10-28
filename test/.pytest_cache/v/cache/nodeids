@@ -1,0 +1,10 @@
+[
+  "test_file_input_stream.py::TestFileInputStream::test_get_next_four_bytes",
+  "test_file_input_stream.py::TestFileInputStream::test_has_next_four_bytes",
+  "test_file_input_stream.py::TestFileInputStream::test_klass",
+  "test_idx_generator.py::TestIdxGenerator::test_get_idx_list",
+  "utils/test_identifier_utils.py::TestIdentifierUtils::test_get_code",
+  "utils/test_identifier_utils.py::TestIdentifierUtils::test_get_length",
+  "utils/test_type_convertor.py::TestTypeConvertor::test_btyes2int",
+  "utils/test_type_convertor.py::TestTypeConvertor::test_int2bytes"
+]
