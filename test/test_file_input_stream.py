@@ -12,9 +12,9 @@ class TestFileInputStream(TestCase):
 
     def test_get_next_four_bytes(self):
         fis = FileInputStream('./resources/tmp.rec')
-        idx, bytes = fis.get_next_four_bytes()
-        self.assertEqual(bytes[3], 0xCE)
+        idx, t_bytes = fis.get_next_four_bytes()
+        self.assertEqual(t_bytes[3], 0xCE)
         self.assertEqual(0, idx)
-        idx, bytes = fis.get_next_four_bytes()
-        self.assertEqual(bytes[3], 0x00)
+        idx, t_bytes = fis.get_next_four_bytes()
+        self.assertEqual(t_bytes[3], 0x00)
         self.assertEqual(4, idx)
