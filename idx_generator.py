@@ -20,7 +20,8 @@ class IdxGenerator:
                     if t_code == IdentifierUtils.FIRST_MAGIC_CODE or t_code == IdentifierUtils.WITH_OUT_MAGIC_CODE:
                         idx_list.append(last_magic_idx)
                     length = IdentifierUtils.get_length(cur_bytes)
-                    self.input_stream.seek_from_current(length)
+                    offset = ((length + 3) >> 2) << 2
+                    self.input_stream.seek_from_current(offset)
                 is_prev_magic = False
         return idx_list
 

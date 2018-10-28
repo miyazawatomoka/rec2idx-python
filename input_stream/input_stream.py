@@ -20,7 +20,7 @@ class InputStream (metaclass=ABCMeta):
         pass
 
     @abstractmethod
-    def seek_from_current(self, length):
+    def seek_from_current(self, offset):
         """
         seek the file pointer from current to current + length,
         implements it need pay attention at 4 bit align

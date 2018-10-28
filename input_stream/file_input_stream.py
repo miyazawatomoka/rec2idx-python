@@ -26,6 +26,5 @@ class FileInputStream(InputStream):
         else:
             return False
 
-    def seek_from_current(self, length):
-        offset = ((length + 3) >> 2) << 2
+    def seek_from_current(self, offset):
         self.rec_file.seek(self.rec_file.tell() + offset)
